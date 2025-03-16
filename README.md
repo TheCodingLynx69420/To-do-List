@@ -1,6 +1,6 @@
 # To-do-List
 
-<h2>Intorduction: </h2>
+<h2>Introduction: </h2>
 
 <p>Just a simple to do list but made more aesthetic and useful, which anyone can use in their daily life</p>
 
