@@ -1,0 +1,145 @@
+/*Adding my fav font*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*overall page layout styles*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/*main container style (feel free to use your own fav colors for grandience!)*/
+.container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(145deg, rgb(100, 25, 154), rgb(154, 20, 20), rgb(176, 13, 194));
+    padding: 10px;
+
+}
+
+/*main todo list container*/
+.todo-app {
+    background: linear-gradient(120deg, rgb(243, 93, 243), rgb(255, 112, 29));
+    margin: 100px;
+    width: 100%;
+    max-width: 650px;
+    margin: 100px, auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    position: absolute;
+    left: 300px;
+
+}
+
+/*styling for the "note" png*/
+.todo-app h2 img {
+    width: 50px;
+    margin-left: 10px;
+}
+
+/*the heading (h2)*/
+.todo-app h2 {
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+/*styling the input areas*/
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(120deg, rgb(185, 69, 185), rgb(189, 83, 21));
+    border-radius: 30px;
+    margin-left: 20px;
+    margin-bottom: 25px;
+}
+
+#input-box {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 500;
+}
+
+/*adding text color for placeholder of input box*/
+::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: linear-gradient(120deg, rgb(255, 89, 12), rgb(183, 28, 210));
+    border-radius: 30px;
+    color: rgb(254, 254, 254);
+    cursor: pointer;
+    font-weight: 500;
+}
+
+/*settings for list of tasks (all of the tasks would be added to the document body using Javascript!)*/
+ul li {
+    list-style: none;
+    font-size: 20px;
+    padding: 12px 8px 10px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    color: rgb(86, 12, 79);
+}
+
+/*adding circles before the list tasks*/
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url('assets/uncheck.webp');
+    background-size: cover;
+    background-position: center;
+    left: 8px;
+}
+
+/*when the user clicks on tasks these would be applied!*/
+
+ul li.checked {
+    text-decoration: line-through;
+    color: blueviolet;
+}
+
+ul li.checked::before {
+    background-image: url('assets/checked.png');
+}
+
+/*"Cross" styling (span would be added by javascript)*/
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    color: blueviolet;
+    line-height: 40px;
+    text-align: center;
+
+
+}
+
+ul li span:hover {
+    background-color: rgb(178, 143, 224);
+    border-radius: 50%;
+}
+
+
+/*----------------------End-------------------------*/
